@@ -1,0 +1,7 @@
+default: -p pretty -p html -p json -p chrome_headless -p cucumber
+pretty: --format pretty
+json: --format json --out=relatorios/json/relatorio_email_gmail.json
+html: --format html --out=relatorios/html/relatorio_email_gmail.html
+chrome_headless: BROWSER=chrome_headless
+chrome: BROWSER=chrome 
+cucumber: --format json --out relatorios/json/relatorio_email_gmail.json
